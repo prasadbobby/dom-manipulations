@@ -1,0 +1,45 @@
+{
+	"details":{
+		"name":"Prasad Bobby",
+		"email":"knvdurgaprasad610@gmail.com",
+		"number":"9542109121",
+		"Address":"Bhimavaram"
+	},
+	"careerobjective":{
+		"info":"To become a DevOps Engineer"
+	},
+	"eduactionalqualification":[
+{
+	"institute":"DNR College of Engineering & Technology",
+	"degree":"B.tech",
+	"passoutyear":"2022",
+	"percentage":"81%"
+},
+{
+	"institute":"SMT.B.Seetha Polytechnic",
+	"degree":"Diploma",
+	"passoutyear":"2019",
+	"percentage":"80%"
+},
+{
+	"institute":"K.V.L.P School",
+	"degree":"SSC",
+	"passoutyear":"2016",
+	"percentage":"97%"
+}
+	],
+
+	"techinicalskills":[{
+		"title":"Programming language",
+		"info":["c,php,java,R,python"]
+	},
+	{
+		"title":"Databases",
+		"info":["oracle,sql,mysql,PostgreSQL"]
+	},
+	{
+		"title":"Operating system",
+		"info":["windows,Red Hat Linux,Ubuntu"]
+	}
+]
+}

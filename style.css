@@ -1,0 +1,99 @@
+body{
+	font-family: 'Signika', sans-serif;
+
+}
+
+
+.parent{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 150px;
+}
+.child1, .child2{
+	box-shadow: 2px 3px 10px rgba(0,0,0,.4);
+	width: 330px;
+	height: 440px;
+	border-radius: 10px;
+	text-align: center;
+	transition: 0.5;
+	transform: translateY(0);
+	background: #fff;
+}
+h3{
+	cursor: pointer;
+}
+.child1 img, .child2 img{
+	width: 200px;
+	height: 200px;
+	margin-top: 20px;
+	border-radius: 50%;
+	box-shadow: 2px 3px 10px rgba(0,0,0,.3);
+}
+.child1:hover, .child2:hover{
+	transform: translateY(-20px);
+	transition: 0.5s;
+	box-shadow: 0 0 0 1500px #4e73df;
+
+}
+.child1:hover ~ .child2{
+	opacity: 0;
+}
+ a {
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 1;
+    transform: translateY(50px);
+    transition: .5s;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.4);
+
+}
+.child1:after, .child2:after {
+    content: "APSSDC";
+    position: absolute;
+    top: 55%;
+    left: 0%;
+    font-size: 5.5em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+
+}
+a:hover{
+	box-shadow: 0px 4px 12px rgba(0,0,0,.5);
+	transition: .5s;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+.parent{
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+.child1{
+	width: 96%;
+	padding: 1%;
+	margin: 1%;
+	border-radius:8px;
+	text-align: center;
+
+}
+
+
+.child2{
+	width: 96%;
+	padding: 1%;
+	margin: 1%;
+	border-radius:8px;
+	text-align: center;
+
+}
+
+}
