@@ -35,6 +35,7 @@ child1.appendChild(name);
  
  var email = document.createElement("h3");
  email.textContent = det.email;
+ email.setAttribute("onClick", "onEmail()");
  child1.appendChild(email);
 
 
@@ -44,7 +45,9 @@ child1.appendChild(name);
  child1.appendChild(number);
 
  var static = document.createElement("a");
- static.href = "./origin/",
+ // static.href = "./origin/starter/",
+ static.setAttribute("onClick", "onStatic()");
+
  static.textContent = det.static;
  child1.appendChild(static);
 
@@ -64,6 +67,7 @@ child2.appendChild(name);
  
  var email = document.createElement("h3");
  email.textContent = info1.email;
+ email.setAttribute("onClick", "onEmail2()");
  child2.appendChild(email);
 
 
@@ -74,11 +78,28 @@ child2.appendChild(name);
 
 
  var dynamic = document.createElement("a");
- dynamic.href = "./origin/",
+ // dynamic.href = "./origin/",
+ dynamic.setAttribute("onClick", "onDynamic()");
+
  dynamic.textContent = info1.dynamic;
  child2.appendChild(dynamic);
 
 
 	
 
+}
+
+
+function onEmail() {
+	window.location.href='mailto:knvdurgaprasad610@gmail.com';
+}
+
+function onEmail2() {
+	window.location.href='mailto:199P5A0503.dnre@apssdc.info';
+}
+function onDynamic() {
+	window.location.href='./origin/';
+}
+function onStatic() {
+	window.location.href='./origin/';
 }
